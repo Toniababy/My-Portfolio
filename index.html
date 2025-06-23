@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tonia's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Header -->
+   <header class="bg-green-300 shadow-md">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo + Name -->
+    <div class="flex items-center space-x-3">
+      <img src="./smilling.jpg" alt="Profile" class="w-10 h-10 rounded-full object-cover" />
+      <h1 class="text-xl font-bold text-green-900">Tonia Onyeka</h1>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-10">
+      <a href="#home" class="text-green-900 hover:text-green-600">Home</a>
+      <a href="#about" class="text-green-900 hover:text-green-600">About</a>
+      <a href="#projects" class="text-green-900 hover:text-green-600">Projects</a>
+      <a href="#contact" class="text-green-900 hover:text-green-600">Contact</a>
+    </nav>
+
+    <!-- Mobile Nav Toggle -->
+    <button class="md:hidden text-green-900" id="menuToggle">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <div class="md:hidden px-10 pb-4 hidden" id="mobileMenu">
+    <a href="#home" class="block text-green-900 py-1 hover:text-green-600">Home</a>
+    <a href="#about" class="block text-green-900 py-1 hover:text-green-600">About</a>
+    <a href="#projects" class="block text-green-900 py-1 hover:text-green-600">Projects</a>
+    <a href="#contact" class="block text-green-900 py-1 hover:text-green-600">Contact</a>
+  </div>
+</header>
+
+
+
+<!-- Hero Section -->
+<section id="home" class="py-16 px-6 bg-green-50">
+  <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+
+    <!-- Text Section -->
+    <div class="text-center md:text-left space-y-4 flex-1">
+      <h2 class="text-4xl md:text-5xl font-bold text-green-700 animate__animated animate__fadeInDown">
+        Hi, I'm <span class="text-green-900">Tonia</span>
+      </h2>
+      <div class="inline-block bg-green-600 text-white px-6 py-2 rounded-full text-lg font-medium shadow-md animate__animated animate__fadeInUp animate__delay-1s">
+        A Software Developer
+      </div>
+      <div>
+        <a href="#projects" class="inline-block mt-6 bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition animate__animated animate__fadeInUp animate__delay-2s">
+          See My Work
+        </a>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="flex-1">
+  <img 
+    src="./formal.jpg" 
+    alt="Tonia's photo"
+    class="rounded-full w-48 h-48 mx-auto object-cover border-4 border-green-300 shadow-lg
+           md:rounded-2xl md:w-full md:h-[28rem] md:object-cover md:object-top md:mx-0 md:border-green-200"
+  />
+</div>
+
+
+  </div>
+</section>
+
+<!-- Add Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-green-100">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Image -->
+    <div class="flex-1">
+      <img 
+        src="./dev.webp" 
+        alt="Keyboard"
+        class="rounded-3xl w-full max-w-md mx-auto shadow-lg"
+      />
+    </div>
+
+    <!-- Text -->
+    <div class="flex-1 text-center md:text-left">
+      <h3 class="text-sm uppercase text-green-800 font-semibold mb-2 tracking-wide">About Me</h3>
+      <p class="text-2xl md:text-3xl font-semibold text-green-900 leading-snug">
+        I'm a teen Developer who started coding at SQI College of ICT.  <br />
+        I love solving problems with code and enjoy working <br />
+         on both design and functionality.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- Projects Section -->
+<section id="projects" class="py-16 px-6 bg-white">
+  <h3 class="text-2xl font-bold text-center mb-10 text-green-700">Projects</h3>
+  
+  <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+    
+    <!-- Quiz App -->
+    <div class="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+      <img src="./quiz-app.png" alt="Quiz App Screenshot" class="w-full h-56 object-cover" />
+      <div class="p-5">
+        <h4 class="text-xl font-semibold mb-2 text-green-800">Quiz App</h4>
+        <p class="text-gray-700 mb-2">A fun app to test your knowledge! Built with HTML, CSS, and JavaScript.</p>
+        <a href="https://my-quiz-peach.vercel.app/" target="_blank"
+           class="text-green-700 font-medium hover:underline">View Project →</a>
+      </div>
+    </div>
+
+    <!-- E-Commerce Website -->
+    <div class="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+      <img src="./ecommerce.PNG" alt="E-Commerce Screenshot" class="w-full h-56 object-cover" />
+      <div class="p-5">
+        <h4 class="text-xl font-semibold mb-2 text-green-800">E-Commerce Website</h4>
+        <p class="text-gray-700 mb-2">An online store for beauty services built using Firebase and Tailwind.</p>
+        <a href="https://e-commerce-project-drab-theta.vercel.app/" target="_blank"
+           class="text-green-700 font-medium hover:underline">View Project →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+   <section id="contact" class="py-16 px-6 bg-green-50">
+  <div class="max-w-3xl mx-auto text-center space-y-8">
+    
+    <h3 class="text-2xl font-bold text-green-800">Let’s Connect</h3>
+    
+    <p class="text-gray-700 text-lg">
+      I am open to opportunities, collaborations, or just having a chat. Feel free to reach out through any of the links below!
+    </p>
+
+    <!-- CV Button -->
+    <a href="./TONIA CV.pdf" download
+       class="inline-block bg-green-700 text-white px-6 py-2 rounded-full shadow hover:bg-green-800 transition">
+      <i class="fas fa-download mr-2"></i>Download My CV
+    </a>
+
+    <!-- Social Links with Icons -->
+    <div class="flex flex-wrap justify-center gap-6 text-green-800 font-medium mt-6 text-lg">
+      <a href="mailto:toniaebereonyeka@gmail.com" class="hover:underline flex items-center gap-2">
+        <i class="fas fa-envelope"></i> Gmail
+      </a>
+      <a href="https://github.com/Toniababy" target="_blank" class="hover:underline flex items-center gap-2">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/tonia-onyeka-ebere" target="_blank" class="hover:underline flex items-center gap-2">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-green-300 text-center py-4 text-green-900">
+      © 2025 Tonia Onyeka. All rights reserved.
+    </footer>
+  </body>
+</html>
+
+<script>
+  // Mobile menu toggle script
+  document.getElementById("menuToggle").addEventListener("click", () => {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  });
+</script>
